@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "name": "SpaTemplate",
+  "private": true,
+  "scripts": {
+    "dev": "set NODE_ENV=debug | webpack-dev-server --content-base app --progress",
+    "build": "set NODE_ENV=build | webpack --progress"
+  },
+  "dependencies": {
+    "bootstrap": "3.3.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015-webpack": "^6.4.3",
+    "clean-webpack-plugin": "^0.1.10",
+    "css-loader": "0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.22.0",
+    "node-sass": "^3.8.0",
+    "path": "^0.12.7",
+    "postcss-loader": "^0.10.1",
+    "sass-loader": "^4.0.0",
+    "style-loader": "0.13.1",
+    "url-loader": "0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-merge": "^0.14.1",
+    "webpack-vendor-chunk-plugin": "^1.0.0"
+  }
+}
