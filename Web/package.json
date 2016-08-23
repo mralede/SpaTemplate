@@ -3,7 +3,7 @@
   "name": "SpaTemplate",
   "private": true,
   "scripts": {
-    "dev": "set NODE_ENV=debug | webpack-dev-server --content-base app --progress",
+    "debug": "set NODE_ENV=debug | webpack-dev-server --content-base app --progress",
     "build": "set NODE_ENV=build | webpack --progress"
   },
   "dependencies": {

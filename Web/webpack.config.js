@@ -13,7 +13,7 @@ const rootDir = path.resolve();
 const srcDir = path.resolve(__dirname, 'source');
 const outDir = path.resolve(__dirname, 'dist');
 
-var config = {
+var common = {
 	node: {
 		__dirname: true
 	},
@@ -73,6 +73,8 @@ var config = {
 	}
 };
 
+
+var config;
 switch (process.env.npm_lifecycle_event) {
 	case 'build':
 		config = merge(common, {
