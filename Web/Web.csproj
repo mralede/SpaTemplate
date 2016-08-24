@@ -66,8 +66,16 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="source\app\about\about.component.js" />
+    <Content Include="source\app\app.js" />
+    <Content Include="source\app\home\home.component.js" />
+    <Content Include="source\app\navigation\navLink.component.js" />
+    <Content Include="source\app\navigation\navigation.component.js" />
+    <Content Include="source\app\routes.js" />
+    <Content Include="source\index.js" />
     <Content Include="packages.config" />
     <Content Include="package.json" />
+    <None Include="source\app\config.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -77,15 +85,15 @@
     <Content Include="webpack.config.js" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Index.html" />
+    <Content Include="source\Index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\" />
     <Folder Include="dist\" />
+    <Folder Include="source\app\someFeature\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,7 +1,11 @@
-﻿import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
-import React from "React";
-import ReactDOM from 'react-dom';
+﻿import React from "react";
 
-import App from "./app/app";
+import { render } from 'react-dom';
+import { Router } from "react-router";
+import routes from "./app/routes";
 
-ReactDOM.render(<App />, document.getElementById("application-container"));
+render((
+	<Router >
+		{routes}
+	</Router>), 
+	document.getElementById("application-container")) 

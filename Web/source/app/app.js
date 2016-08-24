@@ -1,9 +1,11 @@
-﻿import React from "React";
+﻿import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
+
+
+import React from "React";
 
 import configFileName from "./config.json"
 
-import Home from "./home/home.component"
-import About from "./about/about.component"
+import Navigation from "./navigation/navigation.component"
 
 const App = React.createClass({
 	propTypes: {
@@ -17,8 +19,10 @@ const App = React.createClass({
 	render() {
 		return (
 			<div>
-				<Home />
-				<About />
+				<Navigation />
+				<div className="container-fluid">
+					{this.props.children}
+				</div>
 			</div>
 		);
 	}

@@ -31,6 +31,11 @@ var common = {
 	devtool: 'source-map',
 
 	plugins: [
+		//new webpack.ProvidePlugin({
+		//	$: "jquery",
+		//	jQuery: "jquery"
+		//}),
+
 		new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor-[hash:6].js'),
 		new VendorChunkPlugin('vendor'),
 
