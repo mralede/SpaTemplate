@@ -3,16 +3,20 @@
   "name": "SpaTemplate",
   "private": true,
   "scripts": {
-    "debug": "set NODE_ENV=debug | webpack-dev-server --content-base app --progress",
+    "debug": "set NODE_ENV=debug | webpack-dev-server --progress",
     "build": "set NODE_ENV=build | webpack --progress"
   },
   "dependencies": {
-    "bootstrap": "3.3.7"
+    "bootstrap": "3.3.7",
+    "jquery": "^3.1.0",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
   },
   "devDependencies": {
     "babel-core": "^6.13.2",
     "babel-loader": "^6.2.5",
     "babel-preset-es2015-webpack": "^6.4.3",
+    "babel-preset-react": "^6.11.1",
     "clean-webpack-plugin": "^0.1.10",
     "css-loader": "0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",

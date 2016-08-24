@@ -50,10 +50,10 @@ var common = {
 				exclude: /(node_modules|bower_components)/,
 				loader: 'babel', // 'babel-loader' is also a legal name to reference
 				query: {
-					presets: ['es2015']
+					presets: ['es2015', 'react']
 				}
 			},
-			{ test: /\.jsx?$/, loader: 'babel', exclude: /node_modules/ },
+			//{ test: /\.jsx?$/, loader: 'babel', exclude: /node_modules/ },
 
 			{test: /\.css$/,	loader: ExtractTextPlugin.extract("style", "css")},
 			{test: /\.sass$/, loader: ExtractTextPlugin.extract("style", "css!sass")},
